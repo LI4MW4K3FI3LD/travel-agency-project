@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand h1 {
+    margin: 0;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero-section {
+    position: relative;
+    text-align: center;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+}
+
+.welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.secondary-text {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.hero-section {
+    position: relative;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    filter: brightness(70%);
+}
+
+.fade-in {
+    animation: fadeIn 6s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+    0%, 100% {
+        opacity: 0;
+    }
+    20%, 80% {
+        opacity: 1;
+    }
+}
